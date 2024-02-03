@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+/* ===( CODE AASHU )=== */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 10%;
+}
+
+nav .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .wrapper .logo img{
+    width: 100%;
+    height: 90%;
+    margin-top: 7%;
+
+}
+
+nav .wrapper .links{
+    display: flex;
+    align-items: center;
+}
+
+nav .wrapper .links a{
+    color: black;
+    text-decoration: none;
+    margin: 0 25px;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+nav .wrapper .links a::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    background-color: #288315;
+    width: 0%;
+    transition: 0.3s ease;
+}
+
+nav .wrapper .links a:hover::before{
+    width: 100%;
+}
+
+/* Section start */
+
+section{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section .content{
+    width: 120%;
+}
+
+section .content h1{
+    font-size: 4.5rem;
+    margin: 7rem 2rem 0 5rem;
+}
+
+section .content h1 span{
+    color: #007146;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+section .content p{
+    font-size: 1.2rem;
+    margin: 1rem 2rem 0 5rem;
+}
+
+section .content button{
+    font-size: 1.2rem;
+    width: 200px;
+    height: 50px;
+    background: #007146;
+    border-radius:10px ;
+    color: white;
+    font-weight: 700;
+    margin: 1.5rem 0 0 5.5rem;
+    transition: 0.3s linear;
+}
+
+section .content button:hover{
+    color: #007146;
+    background-color: transparent;
+    border: none;
+    box-shadow: 3px 3px black;
+    border-right: 2px solid #007146 ;
+    border-bottom: 2px solid #007146 ;
+}
+
+section .image{
+    width: 100%;
+}
+
+section .image .box{
+    position: absolute;
+    background: #007146;
+    width: 900px;
+    height: 900px;
+    right: -370px;
+    bottom: -370px;
+    border-radius: 100%;
+    pointer-events: none;
+    transition:0.3s ease-in ;
+}
+
+section .image .box img{
+    width: 300px;
+    height: 450px;
+    margin: -50px 0 0 0;
+}
+
+section .image .green{
+    opacity: 1;
+    transform: rotate(0deg);
+    filter: drop-shadow(2px 2px 50px #007146);
+    
+}
+section .image .green img{
+    width: 330px;
+    transform: rotate(-20deg);
+    filter: drop-shadow(2px 2px 50px #007146);
+}
+
+section .image .orange img{
+    width: 330px;
+    transform: rotate(-20deg);
+    filter: drop-shadow(2px 2px 50px orange);
+}
+section .image .orange{
+    opacity: 0;
+    background: #a6661a;
+    transform: rotate(-90deg);
+    filter: drop-shadow(2px 2px 50px orange);
+}
+
+
+section .image .pink {
+    opacity: 0;
+    transform: rotate(-90deg);
+    background-color: #91116a;
+    filter: drop-shadow(2px 2px 50px pink);
+}
+section .image .pink img{
+    transform: rotate(-30deg);
+    height: 520px;
+    margin: -130px 0 0 -20px;
+    filter: drop-shadow(2px 2px 50px pink);
+}
+
+
+/* lower images */
+
+.img-links{
+    width: 20%;
+    height: 10vh;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-links a{
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.img-links a img{
+    width: 50px;
+    height: 90px;
+}
+
+.img-links a:hover{
+    margin-top: -20px;
+    filter: drop-shadow(2px 2px 10px #007146);
+}
+
+.img-links a:nth-child(2){
+    margin: -6px 0 0 -20px;
+}
+.img-links a:nth-child(2):hover{
+    margin-top: -24px;
+    filter: drop-shadow(2px 2px 10px orange);
+}
+
+.img-links a:nth-child(3){
+    margin: -16px 0 0 0;
+}
+.img-links a:nth-child(3):hover{
+    margin-top: -40px;
+    filter: drop-shadow(2px 2px 10px rgb(191,73,177));
+}
+
+.img-links a:nth-child(3) img{
+    height: 90px;
+}
